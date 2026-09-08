@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disneyland | Where Magic Comes Alive</title>
+<style>
+  :root {
+    --midnight: #1a1a3a;
+    --gold: #f0c14b;
+    --blush: #ff6f91;
+    --sky: #6ec6e0;
+    --cream: #fff8ec;
+    --ink: #2b2b45;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(160deg, var(--midnight), #2e2e5c);
+    color: var(--cream);
+    padding: 100px 20px 120px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--cream);
+    clip-path: polygon(0 100%, 5% 40%, 10% 100%, 15% 30%, 20% 100%, 25% 45%, 30% 100%, 35% 25%, 40% 100%, 45% 50%, 50% 100%, 55% 20%, 60% 100%, 65% 40%, 70% 100%, 75% 30%, 80% 100%, 85% 45%, 90% 100%, 95% 35%, 100% 100%);
+  }
+
+  header h1 {
+    font-size: 3.2em;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--gold);
+  }
+
+  header p {
+    font-size: 1.3em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #e8e6f5;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 40px;
+    background: var(--blush);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 16px rgba(255, 111, 145, 0.4);
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(255, 111, 145, 0.5);
+  }
+
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 20px;
+  }
+
+  .highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    text-align: center;
+  }
+
+  .highlight-card {
+    background: white;
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    border-top: 4px solid var(--sky);
+  }
+
+  .highlight-card:nth-child(2) { border-top-color: var(--gold); }
+  .highlight-card:nth-child(3) { border-top-color: var(--blush); }
+
+  .highlight-card h3 {
+    color: var(--midnight);
+    margin-bottom: 12px;
+    font-size: 1.3em;
+  }
+
+  .banner {
+    background: var(--sky);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .banner h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  .banner .cta-button {
+    background: var(--gold);
+    color: var(--midnight);
+    box-shadow: 0 6px 16px rgba(240, 193, 75, 0.5);
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--midnight);
+    color: #c9c8dd;
+    font-size: 0.9em;
+  }
+
+  h2.section-title {
+    text-align: center;
+    color: var(--midnight);
+    font-size: 2.2em;
+    margin-bottom: 40px;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Disneyland</h1>
+    <p>Step into a world where fireworks light up the sky, adventures wait around every corner, and every day feels like a celebration.</p>
+    <a href="#plan" class="cta-button">Plan Your Visit</a>
+  </header>
+
+  <section>
+    <h2 class="section-title">Why Visitors Fall in Love</h2>
+    <div class="highlights">
+      <div class="highlight-card">
+        <h3>Thrilling Rides</h3>
+        <p>From gentle rides for little ones to heart-racing adventures, there's something for every member of the family.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Nightly Fireworks</h3>
+        <p>End your day beneath a sky full of color as spectacular fireworks light up the park.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Unforgettable Parades</h3>
+        <p>Colorful parades fill Main Street with music, dancing, and larger-than-life floats.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="banner" id="plan">
+    <h2>Your Adventure Starts Here</h2>
+    <p>Tickets, hotel packages, and seasonal events are available all year round.</p>
+    <br>
+    <a href="#" class="cta-button">Get Tickets</a>
+  </div>
+
+  <section>
+    <h2 class="section-title">Plan Ahead</h2>
+    <p style="text-align:center; max-width:650px; margin:0 auto;">
+      Whether it's your first visit or your fiftieth, a little planning goes a long way.
+      Check ride wait times, reserve dining in advance, and arrive early to make the most
+      of your day in the park.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Disneyland Fan Page. Made with love for the magic of theme parks.</p>
+  </footer>
+
+</body>
+</html>
